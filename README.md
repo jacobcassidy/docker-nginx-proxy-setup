@@ -76,3 +76,7 @@ When adding a new project to the nginx-proxy-network, keep the following in mind
 - If you're using port 443 for the HTTPS protocol, you must create and add the TLS certs for your local domains in the `/nginx-proxy-base/certs` directory, and add the domain names in your local machine's hosts file (see "Using HTTPS with local domains" instructions above).
 
 > Example projects that use the nginx-proxy-network include the [Docker WordPress Setup](https://github.com/jacobcassidy/docker-wordpress-setup) and the [Docker Nginx PHP-FPM Setup](https://github.com/jacobcassidy/docker-nginx-phpfpm-setup).
+
+## Issues?
+
+If you come across any issues, please feel free to report them [here](https://github.com/jacobcassidy/docker-nginx-proxy-setup/issues).
