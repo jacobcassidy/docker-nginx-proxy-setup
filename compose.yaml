@@ -7,7 +7,10 @@ services:
     volumes:
       - ./certs:/etc/nginx/certs:ro
       - /var/run/docker.sock:/tmp/docker.sock:ro
+    networks:
+      - nginx-proxy-network
 
 networks:
-  default:
-    name: nginx-proxy-network
+  nginx-proxy-network:
+    external: true
+  backend:
