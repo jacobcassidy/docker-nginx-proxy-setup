@@ -32,7 +32,7 @@ Since cURL version 7.85.0, domains ending in _.localhost_ can no longer resolve 
 
 This causes issues when using .localhost with some services, such as PHP and WordPress, because they use the cURL command to connect with other services. For example, WordPress uses it for its internal REST API and loopback connections.
 
-For this reason, I recommend using a different TLD for your local domains, such as _.dockerhost_.
+For this reason, I recommend using a different TLD for your local domains, such as _.dockerhost_ or _.local_.
 
 > Project using older versions of cURL, such as found in PHP versions before 8.1, will not have this issue.
 
