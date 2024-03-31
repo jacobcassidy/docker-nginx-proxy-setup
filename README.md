@@ -21,8 +21,8 @@ You must add TLS certifications for each domain you want to use. This can be don
 4. After mkcert creates your certs, rename them:
     | FROM | TO |
     | - | - |
-    | yourdomain.tld-key.pem | yourdomain.tld.key |
-    | yourdomain.tld.pem | yourdomain.tld.crt |
+    | yourlocaldomain.tld-key.pem | yourlocaldomain.tld.key |
+    | yourlocaldomain.tld.pem | yourlocaldomain.tld.crt |
 5. If you use a TLD that is not _.localhost_ (see note below), you must add the domain name to your local machine's hosts file. This can be done on macOS with: `sudo vim /etc/hosts` and adding `127.0.0.1 yourlocaldomain.tld` to the list (make sure to replace _yourlocaldomain.tld_ with your actual domain name).
 
 ### A note on using the _.localhost_ TLD.
@@ -59,7 +59,7 @@ You have two options for using Git with your remote repository:
 
 1. In your _nginx-proxy-base_ directory, remove the cloned _.git_ directory with: `rm -rf .git`.
 2. Initialize a new local Git repository with: `git init`.
-5. Connect your remote GitHub repo as usual.
+3. Connect your remote GitHub repo as usual.
 
 ## Adding New Projects
 
