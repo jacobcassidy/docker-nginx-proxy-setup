@@ -68,9 +68,9 @@ When adding a new project to the nginx-proxy-network, keep the following in mind
 - You must include the nginx-proxy-network in the project. If your project uses a `compose.yaml` file, include the following network settings as a top-level element:
   ```yaml
   networks:
-    default:
-      name: nginx-proxy-network
+    nginx-proxy-network:
       external: true
+    backend:
   ```
 - Don't include ports for your services running on port 80 or 443 because the nginx-proxy service will take care of them. Other services, such as databases, should still use ports as usual.
 - If you're using port 443 for the HTTPS protocol, you must create and add the TLS certs for your local domains in the `/nginx-proxy-base/certs` directory, and add the domain names in your local machine's hosts file (see "Using HTTPS with local domains" instructions above).
